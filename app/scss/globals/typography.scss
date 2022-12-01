@@ -1,5 +1,15 @@
+@use "../util" as *;
+
 a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+h1 {
+  font-size: rem(28);
+  margin-bottom: rem(3);
+  @include breakpoint-down(small) {
+    font-size: rem(24);
+  }
 }

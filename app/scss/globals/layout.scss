@@ -1,0 +1,6 @@
+@use "../util" as *;
+
+.container {
+  max-width: min(rem(1110), 100% - (rem(25) * 2));
+  margin-inline: auto;
+}

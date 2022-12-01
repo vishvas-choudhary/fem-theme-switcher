@@ -1,6 +1,90 @@
 @use "../util" as *;
 
 .card {
-  background-color: teal;
-  padding: rem(20);
+  background-color: var(--dark-card);
+  color: var(--dark-text1);
+  text-align: center;
+  padding: rem(25);
+  border-radius: 5px;
+
+  &--facebook {
+    border-top: 5px solid var(--facebook);
+  }
+
+  &--twitter {
+    border-top: 5px solid var(--twitter);
+  }
+
+  &--instagram {
+    border-top: 5px solid;
+  }
+
+  &--youtube {
+    border-top: 5px solid var(--youtube);
+  }
+
+  &__handle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(8);
+    margin-bottom: rem(28);
+  }
+
+  &__icon {
+    &--facebook {
+    }
+
+    &--twitter {
+    }
+
+    &--instagram {
+    }
+
+    &--youtube {
+    }
+  }
+
+  &__username {
+    font-size: rem(12);
+    font-weight: 700;
+  }
+
+  &__count {
+    color: var(--dark-text2);
+    font-weight: 700;
+    margin-bottom: rem(24);
+
+    &--big {
+      font-size: rem(56);
+    }
+
+    &--small {
+    }
+  }
+
+  &__label {
+    font-size: rem(12);
+    font-weight: 400;
+    letter-spacing: rem(5);
+    color: var(--dark-text1);
+    text-transform: uppercase;
+  }
+
+  &__change {
+    font-size: rem(12);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(4);
+
+    &--up {
+      color: var(--limegreen);
+    }
+
+    &--down {
+      color: var(--brightred);
+    }
+  }
 }
