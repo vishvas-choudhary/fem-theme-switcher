@@ -1,2 +1,2 @@
-"use strict";console.log("hello");
+"use strict";var radiobtns=document.querySelectorAll(".toggle__wrapper input");radiobtns.forEach((function(e){e.addEventListener("click",(function(e){document.getElementById("dark").checked?document.querySelector("body").classList="dark":document.querySelector("body").classList="light"}))}));
 //# sourceMappingURL=script.js.map
